@@ -1,0 +1,29 @@
+.header-header {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.header-heading {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+}
+@media(max-width: 767px) {
+  .header-header {
+    gap: var(--dl-space-space-unit);
+    align-items: center;
+  }
+  .header-heading {
+    font-size: 36px;
+  }
+}
+@media(max-width: 479px) {
+  .header-header {
+    gap: 0px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
